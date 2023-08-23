@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+ <div class="header">
+    <h1>SIT120 - INTRODUCTION TO RESPONSIVE WEB APPS</h1>
+    <p>Task 1.2P</p>
+  </div>
+
+  <div class="content">
+    <h2>What is Responsive Web Design?</h2>
+    <p>Responsive web design is an approach that makes sure websites adapt their layout and content to different screen sizes and devices.<br> To achieve this adaptability, it makes use of fluid grids, adaptable images, and media queries.
+    </p>
+  </div>
+
+    <script>
+        // String methods
+        let str = 'Web Development';
+        let stringLength = str.length;
+        let uppercaseString = str.toUpperCase();
+        let lowercaseString = str.toLowerCase();
+        let substring = str.substring(0, 3);
+        let indexOfDevelopment = str.indexOf('Development');
+
+        // Number methods
+        let num = 24.565747;
+        let fixedNum = num.toFixed(3);
+        let exponentialNum = num.toExponential();
+        let numAsString = num.toString();
+        let roundedNum = Math.round(num);
+        let sqrtNum = Math.sqrt(num);
+
+        // Array methods
+        let arr = [1, 2, 'three', 'four', 5, 6];
+        let arrLength = arr.length;
+        let joinedArr = arr.join(', ');
+        let reversedArr = arr.slice().reverse();
+        let slicedArr = arr.slice(2, 5);
+        let indexOfthree = arr.indexOf('three');
+
+        // Date methods
+        let currentDate = new Date();
+        let year = currentDate.getFullYear();
+        let month = currentDate.getMonth();
+        let day = currentDate.getDate();
+        let hours = currentDate.getHours();
+
+        // Function methods
+        function greet(name)
+        {
+            return 'Namaste, ' + name + '!';
+        }
+        
+        let greetFunction = greet;
+        let greetingMessage = greetFunction('Gurdarshan');
+
+        function multiply(a, b) 
+        {
+               return a * b;
+        }
+
+        let multiplyFunction = multiply;
+        let multiplicationResult = multiplyFunction(8, 5);
+
+        // Display the output in the HTML body
+        document.write('<h2>String Methods:</h2>');
+        document.write('String Length: ' + stringLength + '<br>');
+        document.write('Uppercase: ' + uppercaseString + '<br>');
+        document.write('Lowercase: ' + lowercaseString + '<br>');
+        document.write('Substring: ' + substring + '<br>');
+        document.write('Index of "Development": ' + indexOfDevelopment + '<br><br>');
+
+        document.write('<h2>Number Methods:</h2>');
+        document.write('Fixed to 2 decimals: ' + fixedNum + '<br>');
+        document.write('Exponential notation: ' + exponentialNum + '<br>');
+        document.write('Converted to string: ' + numAsString + '<br>');
+        document.write('Rounded: ' + roundedNum + '<br>');
+        document.write('Square root: ' + sqrtNum + '<br><br>');
+
+        document.write('<h2>Array Methods:</h2>');
+        document.write('Array length: ' + arrLength + '<br>');
+        document.write('Array joined: ' + joinedArr + '<br>');
+        document.write('Array reversed: ' + reversedArr + '<br>');
+        document.write('Array sliced: ' + slicedArr + '<br>');
+        document.write('Index of "three": ' + indexOfthree + '<br><br>');
+
+        document.write('<h2>Date Methods:</h2>');
+        document.write('Current Date: ' + currentDate + '<br>');
+        document.write('Year: ' + year + '<br>');
+        document.write('Month: ' + month + '<br>');
+        document.write('Day: ' + day + '<br>');
+        document.write('Hours: ' + hours + '<br><br>');
+
+        document.write('<h2>Function Methods:</h2>');
+        document.write('Greeting Message: ' + greetingMessage + '<br>');
+        document.write('Multiplication Result: ' + multiplicationResult + '<br>');
+    </script>
+     <div class="footer"> 
+     <p> Thank You For Visiting.</p>
+    </div>
+</body>
+</html>
+

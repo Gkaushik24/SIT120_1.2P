@@ -1,0 +1,39 @@
+.body
+{
+     font-family: Arial, sans-serif;
+     margin: 15px;
+     padding: 20px;
+}
+  
+.header
+ {
+    background-color: #88bcc5;
+    color: red;
+    text-align: center;
+    padding: 24px;
+  }
+  
+.content
+{
+    padding: 20px;
+}
+  
+.footer
+{
+    background-color: #74c087;
+    color: yellow;
+    text-align: center;
+    padding: 15px;
+}
+  
+@media screen and (max-width: 700px)
+  {
+    .header, .footer 
+    {
+      background-color: #35c481;
+    }
+     content
+    {
+      padding: 10px;
+    }
+}
